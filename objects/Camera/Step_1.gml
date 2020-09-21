@@ -7,7 +7,7 @@ pitch = clamp(pitch - (display_mouse_get_y() - display_get_height() / 2) / 10, -
 
 display_mouse_set(display_get_width() / 2, display_get_height() / 2);
 
-if (keyboard_check(vk_escape)){
+if (keyboard_check_direct(vk_escape)){
     game_end();
 }
 
